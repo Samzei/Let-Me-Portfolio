@@ -1,0 +1,45 @@
+.skill {
+    margin: 0 auto;
+    padding: 3rem 20rem;
+
+    &__main {
+        display: block;
+        float: left;
+    }
+
+    &__sub {
+        display: block;
+        float: right;
+    }
+
+    &__bg {
+        width: 100%;
+        height: .7rem;
+        position: absolute;
+        top: 3rem;
+
+        &--1 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 70%, $aqua 70%)
+        }
+
+        &--2 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 90%, $aqua 90%)
+        }
+
+        &--3 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 80%, $aqua 80%)
+        }
+
+        &--4 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 65%, $aqua 65%)
+        }
+
+        &--5 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 60%, $aqua 60%)
+        }
+
+        &--6 {
+            background-image: linear-gradient(90deg, $blaze 0%, $blaze 85%, $aqua 85%)
+        }
+    }
+}

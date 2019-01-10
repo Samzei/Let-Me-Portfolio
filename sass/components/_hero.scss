@@ -1,0 +1,55 @@
+.hero {
+    margin-top: 7rem;
+    padding: 0 20rem;
+
+    &__img {
+        width: 40rem;
+        display: block;
+    }
+
+    &__heading {
+        margin-top: 30%;
+    }
+
+    &__sub {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 100;
+
+    }
+
+    &__main {
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+
+    &__para {
+        margin-top: 4rem;
+        font-size: 1.3rem;
+        width: 40rem;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            color: $milk;
+            background-color: $blaze;
+            padding: 2rem;
+            border-radius: .2rem;
+            transition: .2s all;
+            margin-right: 2rem;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        &:hover,
+        &:focus {
+            color: orangered;
+            background-color: $milk;
+        }
+    }
+}

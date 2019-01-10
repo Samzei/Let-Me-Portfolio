@@ -1,0 +1,11 @@
+.footer {
+    margin: 0 auto;
+    background-color: $dark;
+    padding: 1rem;
+
+    &__copy {
+        text-align: center;
+        color: $milk;
+        font-size: 1rem;
+    }
+}

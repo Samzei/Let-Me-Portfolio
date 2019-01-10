@@ -1,0 +1,18 @@
+.service {
+    margin: 0 auto;
+    background-color: $ash;
+    padding: 3rem 20rem;
+    text-align: center;
+
+    &__box {
+        background-color: $milk;
+        border: .2rem solid $aqua;
+        padding: 5rem 2rem;
+    }
+
+    &__para {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+}

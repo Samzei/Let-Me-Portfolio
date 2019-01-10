@@ -1,0 +1,23 @@
+.testimonial {
+    margin: 0 auto;
+    padding: 3rem 20rem;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 70rem;
+    line-height: 2.5rem;
+
+    &__img{
+        width: 10rem;
+        height: 10rem;
+        display: block;
+        margin: 0 auto;
+        border-radius: 100%;
+        border: .2rem solid $aqua;
+    }
+
+    &__heading {
+        color: $blaze;
+        font-size: 1.8rem;
+    }
+
+}

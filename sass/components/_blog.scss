@@ -1,0 +1,26 @@
+.blog {
+    margin: 0 auto;
+    background-color: $ash;
+    padding: 3rem 20rem;
+
+    &__img {
+        width: 100%;
+        margin-bottom: 2rem;
+        transform: scale(1.17);
+    }
+
+    &__ger {
+        background-color: $milk;
+        padding: 2.1rem;
+    }
+
+    &__article {
+        font-size: 1.2rem;
+        color: $blaze;
+    }
+
+    &__para {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}

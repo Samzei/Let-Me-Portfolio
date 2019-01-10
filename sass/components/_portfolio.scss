@@ -1,0 +1,43 @@
+.portfolio {
+    margin: 0 auto;
+    padding: 3rem 20rem;
+
+    &__list {
+        text-align: center;
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $dark;
+            padding: .5rem;
+            border: .2rem solid $blaze;
+            transition: .2s all;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $blaze;
+            color: $milk;
+        }
+    }
+
+    &__focus {
+        color: $milk;
+        background-color: $blaze;
+        padding: .5rem 0;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

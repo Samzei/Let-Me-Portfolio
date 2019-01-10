@@ -1,0 +1,62 @@
+.form {
+    margin: 0 auto;
+    padding: 3rem 35rem;
+
+    input {
+        border: .1rem solid $aqua;
+
+        &::placeholder {
+            text-transform: uppercase;
+            color: $twilight;
+        }
+    }
+
+    &__name {
+        display: block;
+        float: left;
+        width: 47%;
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+
+    &__email {
+        display: block;
+        float: left;
+        padding: 1rem;
+        margin: 2rem 0rem;
+        width: 47%;
+        margin-left: .5rem;
+    }
+
+    &__subject {
+        display: block;
+        width: 96%;
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+
+    &__text {
+        display: block;
+        width: 96%;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border: .1rem solid $aqua;
+
+        &::placeholder {
+            text-transform: uppercase;
+            color: $twilight;
+        }
+    }
+
+    &__btn {
+        color: $milk;
+        text-decoration: none;
+        background-color: $blaze;
+        padding: .5rem;
+        border-radius: .2rem;
+        border: 1rem solid $blaze;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+}

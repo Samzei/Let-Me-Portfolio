@@ -1,0 +1,46 @@
+.header {
+    padding-left: 20rem;
+
+    
+    &__img {
+        float: left;
+        display: block;
+        margin-right: 25rem;
+        height: 4rem;
+    }
+
+    &__nav{
+        float: left;
+
+        &--list {
+            margin-top: 1.5rem;
+        }
+
+        &--item {
+            display: inline-block;
+            font-size: $primefont;
+            list-style: none;
+        }
+
+        &--link {
+
+            &,
+            &:link,
+            &visted, {
+                text-decoration: none;
+                color: $dark;
+                margin: 1rem;
+            }
+
+            &:hover {
+                color: $blaze;
+            }
+
+            span {
+                color: $blaze;
+            }
+            
+        }
+
+    }
+}
