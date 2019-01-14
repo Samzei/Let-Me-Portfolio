@@ -27,9 +27,14 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
+  padding-bottom: 0;
 
   @include respond(tab-port){
     padding: 0;
     width: 100%;
+  }
+
+  @include respond(phone) {
+    overflow-x: hidden;
   }
 }

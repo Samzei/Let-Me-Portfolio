@@ -2,19 +2,50 @@
     margin-top: 7rem;
     padding: 0 20rem;
 
+    @include respond(tab-port) {
+        margin-top: 3.5rem;
+        padding: 0 5rem;
+    }
+
     &__img {
         width: 40rem;
         display: block;
+        
+        @include respond(tab-port) {
+            width: 30rem;
+        }
+
+        @include respond(phone) {
+            width: 40rem;
+            margin-left: 7rem;
+
+        }
     }
 
     &__heading {
         margin-top: 30%;
+
+        @include respond(tab-port) {
+            margin-top: 10%;
+        }
+
+        @include respond(phone) {
+            margin-left: 10rem;
+            font-size: 3rem;
+            margin-top: 15%;
+        }
     }
 
     &__sub {
         display: block;
         font-size: 1.8rem;
         font-weight: 100;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-left: 10rem;
+        }
 
     }
 
@@ -30,6 +61,17 @@
         margin-top: 4rem;
         font-size: 1.3rem;
         width: 40rem;
+
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @include respond(phone) {
+            margin-left: 10rem;
+            font-size: 2.5rem;
+        }
+
     }
 
     &__link {
@@ -41,7 +83,6 @@
             padding: 2rem;
             border-radius: .2rem;
             transition: .2s all;
-            margin-right: 2rem;
             text-transform: uppercase;
             font-size: 1.3rem;
         }
@@ -50,6 +91,18 @@
         &:focus {
             color: orangered;
             background-color: $milk;
+        }
+
+        
+        @include respond(phone) {
+            font-size: 2.5rem;
+            
+        }
+    }
+
+    &__left {
+        @include respond(phone) {
+            margin-left: 10rem;
         }
     }
 }

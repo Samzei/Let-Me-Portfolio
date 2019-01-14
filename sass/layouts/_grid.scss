@@ -3,6 +3,11 @@
     margin: 0 auto;
     margin-bottom: 3rem;
 
+    @include respond(phone) {
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
     @include Clear;
 
     [class^="col-"] {
@@ -11,12 +16,17 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+
+        @include respond(phone) {
+            float: none;
+            width: 100% !important;
+            margin-bottom: 3rem;
+        }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
-        position: relative;
-
+        
     }
 
     .col-1-of-4 {

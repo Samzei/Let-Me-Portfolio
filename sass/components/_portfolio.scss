@@ -2,6 +2,14 @@
     margin: 0 auto;
     padding: 3rem 20rem;
 
+    @include respond(tab-port) {
+        padding: 3rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 5rem;
+    }
+
     &__list {
         text-align: center;
         margin-top: -5rem;
@@ -29,12 +37,20 @@
             background-color: $blaze;
             color: $milk;
         }
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
     }
 
     &__focus {
         color: $milk;
         background-color: $blaze;
         padding: .5rem 0;
+
+        @include respond(phone) {
+            padding: 1.1rem 0;
+        }
     }
 
     &__img {

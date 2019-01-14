@@ -1,26 +1,48 @@
 .blog {
-    margin: 0 auto;
+    margin: 0 -3rem;
     background-color: $ash;
     padding: 3rem 20rem;
+
+    @include respond(tab-port) {
+        padding: 3rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 5rem;
+    }
+
+    &__ging {
+        background-color: $milk;
+    }
 
     &__img {
         width: 100%;
         margin-bottom: 2rem;
-        transform: scale(1.17);
     }
 
     &__ger {
-        background-color: $milk;
         padding: 2.1rem;
     }
 
     &__article {
         font-size: 1.2rem;
         color: $blaze;
+        padding-bottom: 2rem;
+        border-bottom: .2rem solid $twilight;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
     }
 
     &__para {
         font-size: 1.4rem;
         line-height: 2rem;
+        margin-top: 1rem;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
     }
 }

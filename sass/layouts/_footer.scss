@@ -1,11 +1,20 @@
 .footer {
-    margin: 0 auto;
     background-color: $dark;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    margin: 2rem -3rem;
+    margin-bottom: 0;
 
     &__copy {
         text-align: center;
         color: $milk;
         font-size: 1rem;
+
+        @include respond(tab-port) {
+            font-size: $primefont;
+        }
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
     }
 }

@@ -2,6 +2,14 @@
     margin: 0 auto;
     padding: 3rem 35rem;
 
+    @include respond(tab-port) {
+        padding: 3rem 15rem;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 5rem;
+    }
+
     input {
         border: .1rem solid $aqua;
 
@@ -58,5 +66,9 @@
         margin-right: 2rem;
         text-transform: uppercase;
         font-size: 1.3rem;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
     }
 }

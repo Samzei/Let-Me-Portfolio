@@ -6,6 +6,14 @@
     width: 70rem;
     line-height: 2.5rem;
 
+    @include respond(tab-port) {
+        padding: 3rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 2rem;
+    }
+
     &__img{
         width: 10rem;
         height: 10rem;
@@ -13,11 +21,36 @@
         margin: 0 auto;
         border-radius: 100%;
         border: .2rem solid $aqua;
+
+        @include respond(phone) {
+            width: 12rem;
+            height: 12rem;
+        }
     }
 
     &__heading {
         color: $blaze;
         font-size: 1.8rem;
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__motto {
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__para {
+         
+        @include respond (phone) {
+            font-size: 2.5rem;
+            padding: 1rem;
+            margin-right: 6rem;
+        }
     }
 
 }
